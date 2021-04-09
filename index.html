@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align="center">Inscrivez-vous ici</h2>
+    <hr width="50">
+    <form name="formulaire" action="" method="POST">
+
+        <fieldset>
+            <legend><b>Information Personnelle</b></legend>
+            <br><br><input required type="text" name="nom" id="" size="25" placeholder="Inserez votre nom" maxlength="20" autocomplete> <br><br>
+            <input required type="text" name="prenom" id="" size="25" placeholder="Inserez votre prenom" maxlength="20"> <br><br>
+            <input type="number" name="age" id="" size="3" min="18" max="99" placeholder="Age"><br><br>
+            <input type="password" name="pwd" id="" size="25" placeholder="Password" minlength="8" maxlength="15"><br><br>
+            <input type="email" name="mail" id="" size="25" placeholder="E-mail"><br><br>
+
+            Inserez une breve description sur vous <br><br>
+            <textarea name="descrip" id="" cols="50" rows="5"></textarea> <br><br>
+
+            Votre statut matrimonial <br><br>
+            <input type="radio" name="statut" id="" value="cel">Celibataire <br>
+            <input type="radio" name="statut" id="" value="mar">Marie (e) <br>
+            <input type="radio" name="statut" id="" value="div">Divorce (e) <br>
+            <input type="radio" name="statut" id="" value="veu">Veuf (ve) <br><br>
+
+            Catégorie socio-professionnelle <br><br>
+            <select name="cat" id="" multiple>
+                <optgroup label="Fonctionnaires">
+                    <option value="enseign">Enseignant</option>
+                    <option value="etud">Etudiant</option>
+                    <option value="med">Medecin</option>
+                </optgroup>
+                <optgroup label="Profession liberales">
+                    <option value="men" >Menagere</option>
+                    <option value="com">Commercant</option>
+                    <option value="chau">Chauffeur</option>
+                </optgroup>
+                
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Hobbies</b></legend>
+            Vos sports préférés <br><br>
+            <input type="checkbox" name="sport" id="" value="foot" >Football <br>
+            <input type="checkbox" name="sport" id="" value="bask">Basketball <br>
+            <input type="checkbox" name="sport" id="" value="ten">Tenis <br>
+            <input type="checkbox" name="sport" id="" value="nat" checked>Natation <br>
+            <input type="checkbox" name="sport" id="" value="hand">Handball <br><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Validation</b></legend>
+            <br><br> Ajouter votre photo : <input type="file" size="40" max_file_size=2500> <br><br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Effacer">
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
